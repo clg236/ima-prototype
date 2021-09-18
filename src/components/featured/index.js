@@ -1,11 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
+const Wrapper = styled.div`
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+`
+
 const Featured = () => {
     return(
-        <main>
-            <h1>MAIN SKETCH AREA</h1>
-        </main>
+        <Wrapper>
+            MAIN SKETCH AREA
+        </Wrapper>
     )
 
 }

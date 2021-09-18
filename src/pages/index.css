@@ -11,3 +11,18 @@
     --headerBg: #fff;
     --headerBoxShadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
   }
+
+  @font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis'), url(../fonts/Metropolis-Regular.otf) format('truetype');
+  }
+
+  @font-face {
+  font-family: 'Metropolis-Black';
+  src: local('Metropolis'), url(../fonts/Metropolis-Black.otf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Metropolis-Thin';
+    src: local('Metropolis'), url(../fonts/Metropolis-Thin.otf) format('truetype');
+  }

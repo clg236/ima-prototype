@@ -12,7 +12,7 @@ const DesktopNavbar = () => {
   return (
     <DesktopNav isScrolled={isScrolled}>
       <Link to="/" className="logo">
-      <img src="./images/logo.png" width="25px" />
+      <img src="./images/logo.png" width="50px" height="50px" />
       </Link>
       <NavLinks />
       <Hamburger toggled={isMenuOpen} toggle={toggleMenu} duration={0} />
@@ -36,7 +36,6 @@ const DesktopNav = styled.nav`
       background: var(--headerBg);
       box-shadow: var(--headerBoxShadow);
     `}
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
