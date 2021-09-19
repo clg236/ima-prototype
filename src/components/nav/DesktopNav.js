@@ -4,13 +4,14 @@ import styled, { css } from "styled-components";
 import { useMenuContext } from "../../state";
 import { Squash as Hamburger } from "hamburger-react";
 import NavLinks from "./NavLinks";
-import { useScroll } from "../../hooks";
+// import { useScroll } from "../../hooks";
 
 const DesktopNavbar = () => {
   const { isMenuOpen, toggleMenu } = useMenuContext();
-  const { isScrolled } = useScroll();
+  // const { isScrolled } = useScroll();
   return (
-    <DesktopNav isScrolled={isScrolled}>
+    // <DesktopNav isScrolled={isScrolled}>
+    <DesktopNav>
       <Link to="/" className="logo">
       <img src="./images/logo.png" width="50px" height="50px" />
       </Link>
@@ -22,6 +23,14 @@ const DesktopNavbar = () => {
 
 export default DesktopNavbar;
 
+
+// ${(props) =>
+//   props.isScrolled &&
+//   css`
+//     background: var(--headerBg);
+//     box-shadow: var(--headerBoxShadow);
+//   `}
+
 const DesktopNav = styled.nav`
   display: flex;
   flex-flow: row nowrap;
@@ -30,12 +39,7 @@ const DesktopNav = styled.nav`
   background: var(--bg);
   color: var(--text);
   transition: all 150ms linear;
-  ${(props) =>
-    props.isScrolled &&
-    css`
-      background: var(--headerBg);
-      box-shadow: var(--headerBoxShadow);
-    `}
+
   top: 0;
   left: 0;
   width: 100%;

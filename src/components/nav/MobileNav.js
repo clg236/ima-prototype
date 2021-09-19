@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { useMenuContext } from "../../state";
-import { useScrollFreeze } from "../../hooks";
+// import { useScrollFreeze } from "../../hooks";
 import NavLinks from "./NavLinks";
 
 const MobileNavbar = () => {
   const { isMenuOpen } = useMenuContext();
-  useScrollFreeze(isMenuOpen);
+  // useScrollFreeze(isMenuOpen);
   return (
     <>
       {isMenuOpen && (

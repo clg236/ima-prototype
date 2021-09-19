@@ -70,8 +70,8 @@ const Dot = styled.div`
   left: 100px;
   background: white;
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   z-index: 1;
 `
 
@@ -104,7 +104,7 @@ const IndexPage = () => {
             <DotTitle>Welcome to Interactive Media Arts</DotTitle>
             <DotBody>exploring the expressive possibilities of interactive media</DotBody>
           </Dot>
-          <Featured><iframe src="https://preview.p5js.org/MOQN/embed/zw-KuEB4N" height="500px" width="100%" scrolling="no" ></iframe></Featured>
+          <Featured><iframe src="https://preview.p5js.org/p5/present/h9x7m-UpU3K" height="500px" width="100%" scrolling="no" ></iframe></Featured>
         </Hero>
         
       </Wrapper>

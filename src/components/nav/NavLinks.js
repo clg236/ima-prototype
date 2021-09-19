@@ -9,7 +9,7 @@ export const links = ["program", "people", "research", "events"];
 
 const DesktopNavLinks = () => {
   const { closeMenu } = useMenuContext();
-  const [theme, toggleTheme] = useTheme();
+  // const [theme, toggleTheme] = useTheme();
 
   return (
     <NavLinksWrapper className="nav-links">
@@ -21,8 +21,10 @@ const DesktopNavLinks = () => {
         </li>
       ))}
       <li>
-        <button onClick={toggleTheme}>
-          <Icon name={theme === "dark" ? "day" : "night"} />
+        {/* <button onClick={toggleTheme}> */}
+        <button>
+          {/* <Icon name={theme === "dark" ? "day" : "night"} /> */}
+          <Icon />
         </button>
       </li>
     </NavLinksWrapper>
